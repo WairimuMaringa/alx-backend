@@ -5,7 +5,7 @@ and 10 that returns a dictionary
 """
 import math
 import csv
-from typing import List
+from typing import Dict, List
 
 
 class Server:
