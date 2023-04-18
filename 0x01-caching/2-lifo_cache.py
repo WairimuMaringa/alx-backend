@@ -8,10 +8,12 @@ from base_caching import BaseCaching
 
 class LIFOCache(BaseCaching):
     """ inherits and stores. """
+
     def __init__(self):
         super().__init__()
 
     def put(self, key, item):
+        """ add item to cache. """
         if key and item:
             self.cache_data[key] = item
         if len(self.cache_data) > BaseCaching.MAX_ITEMS:
@@ -21,4 +23,5 @@ class LIFOCache(BaseCaching):
             self.last_key = key
 
     def get(self, key):
+        """ obtain item from cache. """
         return self.cache_data.get(key)
