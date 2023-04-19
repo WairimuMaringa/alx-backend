@@ -9,6 +9,7 @@ from collections import OrderedDict
 
 class LFUCache(BaseCaching):
     """ inherits and stores. """
+
     def __init__(self):
         """ initialise instance. """
         super().__init__()
