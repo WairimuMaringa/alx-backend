@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Change the getlocale function
+Change the get locale function to a users
+preference
 """
 from flask import Flask, render_template, request, g
 from flask_babel import Babel

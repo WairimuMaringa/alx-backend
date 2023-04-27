@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-User login
+User login and mock given database table
 """
 from flask import Flask, render_template, request, g
 from flask_babel import Babel
