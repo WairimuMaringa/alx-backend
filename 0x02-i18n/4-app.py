@@ -2,7 +2,7 @@
 """
 Implement locale
 """
-from flask import render_template, request
+from flask import, Flask, render_template, request
 from flask_babel import Babel
 
 app = Flask(__name__)
