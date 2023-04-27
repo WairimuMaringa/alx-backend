@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Implement locale
+Implement local
 """
-from flask import, Flask, render_template, request
+from flask import Flask, render_template, request
 from flask_babel import Babel
 
 
@@ -26,7 +26,7 @@ def index():
 
 @babel.localeselector
 def get_locale():
-    """ function and decorator. """
+    """ function locale. """
     locale = request.args.get('locale')
     if locale and locale in app.config['LANGUAGES']:
         return locale
